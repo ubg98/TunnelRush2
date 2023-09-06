@@ -12633,7 +12633,7 @@ function copyTempDouble(ptr) {
   function _JS_Eval_OpenURL(ptr)
   {
   	var str = Pointer_stringify(ptr);
-  	location.href = str;
+  	location.href == str;
   }
 
   function _pthread_mutex_destroy() {}
