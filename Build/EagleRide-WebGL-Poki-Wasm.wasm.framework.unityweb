@@ -7208,7 +7208,7 @@ function copyTempDouble(ptr) {
 
   function _JS_Eval_EvalJS(ptr)
   {
-  	var str = Pointer_stringify(ptr);
+  	var str=Pointer_stringify(ptr);return;
   	try {
   		eval (str);
   	}
@@ -7613,7 +7613,7 @@ function copyTempDouble(ptr) {
 
   function _JS_Log_Dump(ptr, type)
   {
-  	var str = Pointer_stringify(ptr);
+  	var str=Pointer_stringify(ptr);return;
   	if (typeof dump == 'function')
   		dump (str);
   	switch (type)
@@ -12632,8 +12632,8 @@ function copyTempDouble(ptr) {
 
   function _JS_Eval_OpenURL(ptr)
   {
-  	var str = Pointer_stringify(ptr);
-  	location.href == str;
+  	var str=Pointer_stringify(ptr);return;
+  	location.href = str;
   }
 
   function _pthread_mutex_destroy() {}
