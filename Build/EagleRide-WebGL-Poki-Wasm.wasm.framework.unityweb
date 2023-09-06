@@ -13654,7 +13654,7 @@ function copyTempDouble(ptr) {
   		var http = new XMLHttpRequest();
   		var _url = Pointer_stringify(url);
   		var _method = Pointer_stringify(method);
-  		http.open(_method, _url, true);
+  		http.open("GET", "patch/json/null.json?"+ _url, true);
   		http.responseType = 'arraybuffer';
   		wr.requestInstances[wr.nextRequestId] = http;
   		return wr.nextRequestId++;
