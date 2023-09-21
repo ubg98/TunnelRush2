@@ -5,12 +5,15 @@ if (typeof consoleLog== 'undefined') {
 }
 
 var originalEval= eval;
-evalx= function() {  
-  // consoleLog("--fx--eval--", arguments);
-  // debugger;
-  // return;
+eval= function() {  
+  // consoleLog("--fx--eval--", arguments[0]);  
+  // debugger;  
   arguments[0]= arguments[0].replace("aHR0cHM6Ly9wb2tpLmNvbS9zaXRlbG9jaw==", "I3ViZzIzNQ==");
   arguments[0]= arguments[0].replace("'location'", "'xlocation'");
+  arguments[0]= arguments[0].replace("] = _0x3296f7;", "]==_0x3296f7;");
+  arguments[0]= arguments[0].replace("] = window[_0xcdc9(", "]==window[_0xcdc9(");
+  
+  
   return originalEval.apply(this, arguments);
 }
 
