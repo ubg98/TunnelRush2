@@ -4,7 +4,7 @@
 	
 	<meta charset="utf-8">
 	
-	<title>GSwitch 3 Unblocked - ubg235 Poki</title>
+	<title>G-Switch 2 Unblocked - ubg235 Poki</title>
 	
 	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta name="apple-mobile-web-app-capable" content="yes">
@@ -13,7 +13,10 @@
 	<link rel="shortcut icon" type="image/png" href="./favicon.png">
 	
 	
-	<script type="text/javascript" src="./G-Switch3.js"></script>
+	<script type="text/javascript" src="./lib/howler.min.js"></script>
+	<script type="text/javascript" src="./lib/pako.min.js"></script>
+	<script type="text/javascript" src="./lib/FileSaver.min.js"></script>
+	<script type="text/javascript" src="./G-Switch2.js"></script>
 	
 	<script>
 		window.addEventListener ("touchmove", function (event) { event.preventDefault (); }, { capture: false, passive: false });
@@ -28,42 +31,6 @@
 	<style>
 		html,body { margin: 0; padding: 0; height: 100%; overflow: hidden; }
 		#openfl-content { background: #000000; width: 100%; height: 100%; }
-		@font-face {
-			font-family: 'Meiryo UI';
-			src: url('assets/data/MeiryoUI.eot?#iefix') format('embedded-opentype'),
-			url('assets/data/MeiryoUI.woff') format('woff'),
-			url('assets/data/MeiryoUI.ttf') format('truetype'),
-			url('assets/data/MeiryoUI.svg#Meiryo%20UI') format('svg');
-			font-weight: normal;
-			font-style: normal;
-		}
-		@font-face {
-			font-family: 'Meiryo UI W53 Bold';
-			src: url('assets/data/MeiryoUIBold.eot?#iefix') format('embedded-opentype'),
-			url('assets/data/MeiryoUIBold.woff') format('woff'),
-			url('assets/data/MeiryoUIBold.ttf') format('truetype'),
-			url('assets/data/MeiryoUIBold.svg#Meiryo%20UI%20W53%20Bold') format('svg');
-			font-weight: normal;
-			font-style: normal;
-		}
-		@font-face {
-			font-family: 'Un Dotum';
-			src: url('assets/data/UnDotum.eot?#iefix') format('embedded-opentype'),
-			url('assets/data/UnDotum.woff') format('woff'),
-			url('assets/data/UnDotum.ttf') format('truetype'),
-			url('assets/data/UnDotum.svg#Un%20Dotum') format('svg');
-			font-weight: normal;
-			font-style: normal;
-		}
-		@font-face {
-			font-family: 'Un Dotum Bold';
-			src: url('assets/data/UnDotumBold.eot?#iefix') format('embedded-opentype'),
-			url('assets/data/UnDotumBold.woff') format('woff'),
-			url('assets/data/UnDotumBold.ttf') format('truetype'),
-			url('assets/data/UnDotumBold.svg#Un%20Dotum%20Bold') format('svg');
-			font-weight: normal;
-			font-style: normal;
-		}
 		@font-face {
 			font-family: 'Gerdana';
 			src: url('assets/data/verdana.eot?#iefix') format('embedded-opentype'),
@@ -101,24 +68,6 @@
 			font-style: normal;
 		}
 		@font-face {
-			font-family: 'Microsoft YaHei Bold';
-			src: url('assets/data/YaHei Bold.eot?#iefix') format('embedded-opentype'),
-			url('assets/data/YaHei Bold.woff') format('woff'),
-			url('assets/data/YaHei Bold.ttf') format('truetype'),
-			url('assets/data/YaHei Bold.svg#Microsoft%20YaHei%20Bold') format('svg');
-			font-weight: normal;
-			font-style: normal;
-		}
-		@font-face {
-			font-family: 'Microsoft YaHei';
-			src: url('assets/data/YaHei.eot?#iefix') format('embedded-opentype'),
-			url('assets/data/YaHei.woff') format('woff'),
-			url('assets/data/YaHei.ttf') format('truetype'),
-			url('assets/data/YaHei.svg#Microsoft%20YaHei') format('svg');
-			font-weight: normal;
-			font-style: normal;
-		}
-		@font-face {
 			font-family: 'Nokia Cellphone FC Small';
 			src: url('flixel/fonts/nokiafc22.eot?#iefix') format('embedded-opentype'),
 			url('flixel/fonts/nokiafc22.woff') format('woff'),
@@ -147,10 +96,8 @@
 	<div id="openfl-content"></div>
 	
 	<script type="text/javascript">
-		lime.embed ("G-Switch3", "openfl-content", 0, 0, { parameters: {} });
+		lime.embed ("G-Switch2", "openfl-content", 0, 0, { parameters: {} });
 	</script>
-  <script src="js/analytics_ubg_v1_4.js"></script>
-  <script src="js/ubg235_client_v1_1.js"></script>
 	
 </body>
 </html>
