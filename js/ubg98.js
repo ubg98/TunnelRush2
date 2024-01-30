@@ -19,6 +19,7 @@ const backlinksList= [{
   text: "IDLE",
 }];
 
+
 function inFrame () {
   try {
       return window.self !== window.top;
@@ -26,6 +27,7 @@ function inFrame () {
       return true;
   }
 }
+
 
 function botBrowser() {
 try {
@@ -35,13 +37,29 @@ try {
 }
 }
 
+
+function desktopBrowser() {
+  try {
+    const w= window.screen.width;
+    return (w>= 800);
+  } catch (e) {
+    return false;
+  }
+  return false;
+}
+
+
 function closeBacklinks() {
 document.getElementById("backlinksPlace").style.display= "none";
 return false;
 }
 
+
 function insertBacklinks() {
 if (inFrame()) {
+  return false;
+}
+if (!desktopBrowser()) {
   return false;
 }
 let backlinksHTML= "";
